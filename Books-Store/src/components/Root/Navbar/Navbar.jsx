@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const links = <>
-      
-         
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Listed Books</a></li>
-                <li><a href="#">Pages To Read</a></li>
-            
-        
+
+
+        <Link to="/">
+            <li><a href="">Home</a></li>
+        </Link>
+        <li><a href="#">Listed Books</a></li>
+        <li><a href="#">Pages To Read</a></li>
+
+
 
     </>
 
@@ -45,8 +48,9 @@ const Navbar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="navbar-end gap-4">
+                <a className="btn">Sign in</a>
+                <a className="btn">Sign up</a>
             </div>
         </div>
     );
